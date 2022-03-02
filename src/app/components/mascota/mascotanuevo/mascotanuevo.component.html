@@ -1,0 +1,23 @@
+<form>
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="nombre" type="text" [(ngModel)]="item.nombre" class="form-control" id="nombreInput" placeholder="Nombre">
+            <label for="nombreInput">Nombre Mascota</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="sexo" type="text" [(ngModel)]="item.sexo" class="form-control" id="sexoInput" placeholder="sexo producto">
+            <label for="sexoInput">Sexo </label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="raza" type="text" [(ngModel)]="item.raza" class="form-control" id="razaInput" placeholder="raza producto">
+            <label for="razaInput">Raza </label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="tamano" type="text" [(ngModel)]="item.tamano" class="form-control" id="tamanoInput" placeholder="tamano producto">
+            <label for="tamanoInput">Tamano </label>
+        </div>
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>
